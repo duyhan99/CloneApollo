@@ -1,0 +1,140 @@
+.hero{
+    position: relative;
+    width: 1450px;
+    max-width: 95%;
+    height: 600px;
+    background-color: #efefef;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2rem;
+    
+    &__header{
+        display: flex;
+        width: 100%;
+        height: 80px;
+        justify-content: flex-end;
+
+        &--toggle{
+            display: flex;
+            width: 80px;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+				a{
+					color: #000;
+					text-decoration: none;
+					transition: all .3s ease-in-out;
+					
+					&:hover{
+						text-decoration: none;
+					}
+			}
+				
+				nav{
+					margin: 15px;
+					color: #000;
+					overflow: hidden;
+				}
+				
+				#button{
+					width: 100px;
+					text-align: center;
+					border-radius: 20px;
+					margin-bottom: 10px;
+					padding: 5px;
+					color: #fff;
+					background: #000;
+					cursor: pointer;
+				}
+				
+				#nav{
+					overflow: hidden;
+					text-align: center;
+					max-height: 0;
+					opacity: 0;
+					transition: all .5s ease-in-out 0s;
+					position: absolute;
+					right: 3rem;
+				}
+				
+				#nav li{
+					margin: 5px 0;
+					padding: 10px;
+					background: #efefef;
+					list-style-type: none;
+				}
+				
+				#nav.open {
+					position: absolute;
+					max-height:500px;
+					opacity: 1;
+					z-index: 9999;
+				}
+    }
+
+    &__wrapper{
+        width: 1180px;
+        max-width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+
+        &--welcome{
+          position: relative;
+
+          &-title{
+            font-family: "Raleway", Helvetica, sans-serif;
+            // font-weight: 100;
+            font-size: 24px;
+            display: block;
+            text-align: left;
+						& > h1{
+							font-weight: 100;
+							font-family: "Raleway", Helvetica, sans-serif;
+							
+						}
+        }
+
+        &-content{
+            position: relative;
+            text-align: left;
+            display: block;
+            line-height: 1.8rem;
+            font-family: "LMRomanSlant10",serif;
+            color: #111;
+            font-style: italic;
+            font-size: 1.1rem;
+            width: 40%;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 74px;
+          background-color: #111;
+          top: 15rem;
+          left: 0rem;
+          bottom: -88px;
+          right: 0;
+          visibility: visible;
+        }
+      }
+
+        &--img{
+            visibility: visible;
+            position: absolute;
+            top: 5rem;
+            bottom: 0;
+            right: 4rem;
+
+            & > img{
+                width: 649px;
+                height: 521px;
+            }
+        }
+    }
+
+}

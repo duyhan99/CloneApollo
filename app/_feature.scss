@@ -1,0 +1,64 @@
+.feature{
+	margin-top: 2.5rem;
+    display: flex;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+
+				&--welcome{
+					position: relative;
+					display: flex;
+					width: 65%;
+					margin: auto;
+					text-align: left;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					padding-left: 3rem;
+
+					&-title{
+						width: 100%;
+						margin:auto;
+						text-align: left;
+						margin-bottom: 1.875rem;
+					}
+
+					&-content{
+						position: relative;
+						text-align: left;
+						display: block;
+						line-height: 1.8rem;
+						font-family: "LMRomanSlant10",serif;
+						color: #111;
+						font-style: italic;
+						font-size: 1.1rem;
+
+						&::after{
+							content: '';
+							position: absolute;
+							display: block;
+							width: 1px;
+							height: 72px;
+							background-color: #111;
+							top: 8rem;
+							left: 0;
+							right: 0;
+							bottom: 0;
+						}
+					}
+
+
+				}
+
+				&--img{
+					margin: auto;
+					display: block;
+
+					& > img{
+						width: 85%;
+						margin-left: 5rem;
+					}
+				}
+    }
+}

@@ -1,0 +1,17 @@
+.work{
+    margin-top: 2.5rem;
+
+    svg{
+        z-index: 999;
+        opacity: 2;
+    }
+
+    &__wrapper{
+        width: 100%;
+
+        &--control{
+            top: -25% !important;
+            opacity: 1;
+        }
+    }
+}
