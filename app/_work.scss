@@ -2,16 +2,18 @@
     margin-top: 2.5rem;
 
     svg{
-        z-index: 999;
+        z-index: 1;
         opacity: 2;
     }
 
     &__wrapper{
         width: 100%;
+        height: 100%;
 
         &--control{
-            top: -25% !important;
+            top: -30% !important;
             opacity: 1;
+            z-index: 999;
         }
     }
 }

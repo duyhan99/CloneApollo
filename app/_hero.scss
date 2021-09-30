@@ -11,7 +11,7 @@
     &__header{
         display: flex;
         width: 100%;
-        height: 80px;
+        height: 75px;
         justify-content: flex-end;
 
         &--toggle{
@@ -84,6 +84,7 @@
 
         &--welcome{
           position: relative;
+					// margin: auto;
 
           &-title{
             font-family: "Raleway", Helvetica, sans-serif;
